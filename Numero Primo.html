@@ -1,0 +1,42 @@
+<script>
+	
+function esPrimo(num) {
+var resultado = null;
+var i=2;
+if (num == 1 || num == 2) {
+	alert('El numero ' +num+ ' es primo'); 
+}else{
+	while( i<num )
+
+{
+	if(num % i == 0) {
+		return resultado = true;
+		break;
+	
+	}else{
+		if (i<num) {
+			i++;
+		}else{
+			return resultado = false;
+			break;
+		};
+    }
+	
+  }
+ } 
+}
+  
+
+  	
+	    var	num = parseFloat(prompt("Ingrese un valor"));
+		var resultadoFinal = esPrimo(num);
+		if (resultadoFinal == true) {
+			alert('El numero no es primo');
+		} else{
+			alert('el numero es primo');
+		};
+
+		
+
+
+</script>   
